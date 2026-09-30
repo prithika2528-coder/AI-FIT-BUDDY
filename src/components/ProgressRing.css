@@ -1,0 +1,31 @@
+.progress-ring-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.progress-ring {
+  transform: rotate(-90deg);
+}
+
+.progress-ring-track {
+  fill: transparent;
+  stroke: var(--color-border);
+}
+
+.progress-ring-fill {
+  fill: transparent;
+  stroke: var(--color-primary);
+}
+
+.progress-ring-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}

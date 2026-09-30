@@ -1,0 +1,52 @@
+.workout-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+
+.workout-card:hover {
+  border-color: var(--color-primary);
+}
+
+.workout-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: var(--spacing-md);
+}
+
+.workout-name {
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.tag {
+  font-size: 0.75rem;
+  padding: 4px 8px;
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.tag-strength { background-color: rgba(43, 75, 255, 0.1); color: var(--color-primary); }
+.tag-cardio { background-color: rgba(255, 107, 44, 0.1); color: var(--color-secondary); }
+.tag-mobility { background-color: rgba(25, 195, 154, 0.1); color: var(--color-accent); }
+.tag-warmup { background-color: var(--color-border); color: var(--color-text); }
+.tag-cooldown { background-color: rgba(90, 98, 132, 0.1); color: var(--color-text-light); }
+
+.workout-meta {
+  display: flex;
+  gap: var(--spacing-md);
+  margin-top: var(--spacing-xs);
+}
+
+.meta-item {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.85rem;
+  color: var(--color-text-light);
+}
